@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+    color: #333333;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro W3", "Segoe UI Variable", "Segoe UI", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+    font-size: 100%;
+    line-height: 1.75em;
+    text-align: center;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+header, footer, main, article, section, aside, nav, div {
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
+    font-feature-settings: "palt";
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
+    font-weight: normal;
+    font-size: 100%;
+    font-feature-settings: "palt";
+}
+
+img {
+    border: none;
+    outline: none;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+h1#galleryTitle{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px 0px;
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: solid 1px rgba(128, 128, 128, 1);
+}
+
+ul#photoGallery {
+    margin: 0px auto;
+    width: 80%;
+    border: solid 1px rgba(128, 128, 128, 1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: start;
+    justify-content: center;
+    align-items: stretch;
+    /* width: calc(100% - 100px); */
+    gap: 20px;
+    padding: 20px;
+    border: solid 1px #666666;
+    list-style-type: none;
+    gap: 20px;
+}
+
+ul#photoGallery li {
+    flex: 1 1 calc(33.333334% - 20px);
+    /* border: solid 1px #999999;
+    padding: 10px;
+    line-height: 1em;
+    box-sizing: border-box; */
+}
+
+ul#photoGallery li figure{
+    width: 100%;
+    padding: 20px;
+    margin: 0px;
+    border: solid 1px rgba(128, 128, 128, 1);
+}
+
+ul#photoGallery li figure img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    background-size: auto;
+/*  
+    height: auto;
+*/
+    margin-bottom: 0.25em;
+	border: solid 1px rgba(128, 128, 128, 1);
+}
+
+ul#photoGallery li figure figcaption{
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+div#image-preview {
+    width: 80%;
+    margin: 20px auto;
+    padding: 0;
+}
+
+div#image-preview img {
+    width: 100%;
+    height: auto;
+}
+
+div#button-area {
+    width: 100%;
+    margin: 20px auto;
+    padding: 40px;
+    text-align: center;
+    border-top: solid 1px #666666;
+}
